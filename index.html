@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Space Life</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+  <div id="game">
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="hud">
+      <div>
+        <span>SCORE</span>
+        <strong id="score">0</strong>
+      </div>
+
+      <div class="title">MY SPACE LIFE</div>
+
+      <div>
+        <span>LIVES</span>
+        <strong id="lives">♥♥♥</strong>
+      </div>
+    </div>
+
+    <div id="startScreen" class="screen">
+      <div class="panel">
+        <div class="rocket">🚀</div>
+        <h1>MY SPACE LIFE</h1>
+        <p>Survive the endless void.</p>
+        <button id="startButton">START MISSION</button>
+        <small>Move: WASD / Arrow Keys<br>Fire: SPACE</small>
+      </div>
+    </div>
+
+    <div id="gameOverScreen" class="screen hidden">
+      <div class="panel">
+        <div class="rocket">💥</div>
+        <h2>MISSION FAILED</h2>
+        <p>Score</p>
+        <div id="finalScore">0</div>
+        <button id="restartButton">TRY AGAIN</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
